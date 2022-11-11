@@ -4,8 +4,8 @@
   "description": "\"# shopping-cart\"",
   "main": "script.js",
   "scripts": {
-    "start" : "parcel index.html",
-    "build" :  "parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/chijason99/shopping-cart#readme",
   "devDependencies": {
     "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
   }
 }
