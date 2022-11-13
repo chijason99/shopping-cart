@@ -44,5 +44,37 @@
       <div data-cart-length class="bg-red-500 rounded-full text-xs absolute w-6 h-6 flex justify-center items-center right-0 bottom-0 transform translate-x-2 translate-y-2">2</div>
     </button>
   </section>
+  <template data-template-store-item>
+    <div data-details-container class="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <div class="block relative h-48 rounded overflow-hidden">
+        <img data-image alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260/FF0/FF0">
+      </div>
+      <div class="mt-4 flex items-end justify-between">
+        <div>
+          <h3  data-category class="text-gray-500 text-xs tracking-widest title-font uppercase mb-1">Primary Color</h3>
+          <h2  data-name class="text-gray-900 title-font text-lg font-medium">Yellow</h2>
+          <p  data-price class="mt-1">$21.00</p>
+        </div>
+        <button data-add-btn class="text-white py-2 px-4 text-xl bg-blue-500 rounded hover:bg-blue-700">Add To Cart</button>
+      </div>
+    </div>
+    </template>
+    <template data-template-cart-item>
+      <div data-cart-item-container class="mb-6">
+        <div class="block relative h-24 rounded overflow-hidden">
+          <img data-cart-item-image alt="ecommerce" class="object-cover object-center w-full h-full block rounded" src="https://dummyimage.com/210x130/F00/F00">
+          <button data-remove-from-cart-button class="absolute top-0 right-0 bg-black rounded-tr text-white w-6 h-6 text-lg flex justify-center items-center">&times;</button>
+        </div>
+        <div class="mt-2 flex justify-between">
+          <div class="flex items-center title-font">
+            <h2 data-cart-item-name class="text-gray-900 text-lg font-medium">
+              Red
+            </h2>
+            <span data-cart-item-number class="text-gray-600 text-sm font-bold ml-1"></span>
+          </div>
+          <div data-cart-item-price>$32.00</div>
+        </div>
+      </div>
+    </template>
 </body>
 </html>
